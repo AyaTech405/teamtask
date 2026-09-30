@@ -10,21 +10,42 @@ It brings together project management, task tracking, team collaboration, messag
 
 ## 📸 Screenshots
 
-> Screenshots will be added after the application has been fully tested.
+### 🔐 Authentication
 
-<!--
-### Dashboard
+Users can create an account and sign in to TeamTask.
+
+![TeamTask Login](screenshots/login.png)
+
+### 📊 Dashboard
+
+The dashboard provides an overview of projects, tasks, progress, and team activity.
+
 ![TeamTask Dashboard](screenshots/dashboard.png)
 
-### Projects & Kanban
-![TeamTask Projects](screenshots/projects.png)
+### 📁 Project Creation
 
-### Tasks
-![TeamTask Tasks](screenshots/tasks.png)
+Projects can be created with a name, subject, description, deadline, and color.
 
-### Team Chat
-![TeamTask Chat](screenshots/chat.png)
--->
+![Create Project](screenshots/new_project.png)
+
+### ✅ Task Management
+
+Tasks can be created, assigned to team members, given priorities and deadlines, and tracked through their status.
+
+![Task Management](screenshots/tasks.png)
+
+### 📋 Project Status
+
+The project status interface provides a visual way to follow task progression.
+
+![Project Status](screenshots/status.png)
+
+### 💬 Team Chat
+
+Team members can communicate within the project through the integrated chat.
+
+![Team Chat](screenshots/chat.png)
+
 
 ---
 
