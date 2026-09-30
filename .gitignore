@@ -1,0 +1,10 @@
+node_modules/
+dist/
+dist-app/
+database/teamtask.db
+database/_init.php
+.env
+.env.local
+*.log
+.DS_Store
+Thumbs.db

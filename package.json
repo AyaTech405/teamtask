@@ -1,0 +1,54 @@
+{
+  "name": "teamtask",
+  "version": "1.0.0",
+  "description": "Gestion de projets étudiants en équipe",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && cross-env NODE_ENV=development electron .\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "electron .",
+    "pack:win": "vite build && electron-builder --win",
+    "pack:mac": "vite build && electron-builder --mac",
+    "pack:linux": "vite build && electron-builder --linux"
+  },
+  "dependencies": {
+    "axios": "^1.16.0",
+    "date-fns": "^3.6.0",
+    "lucide-react": "^0.344.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "electron": "^29.1.0",
+    "electron-builder": "^24.13.3",
+    "vite": "^5.4.21",
+    "wait-on": "^7.2.0"
+  },
+  "build": {
+    "appId": "fr.teamtask.app",
+    "productName": "TeamTask",
+    "asar": false,
+    "directories": {
+      "output": "dist-app"
+    },
+    "files": [
+      "electron/**/*",
+      "dist/**/*",
+      "backend/**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}

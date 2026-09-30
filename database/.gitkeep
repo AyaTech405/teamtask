@@ -1,0 +1,1 @@
+Ce dossier est vide au démarrage : la base SQLite (teamtask.db) est créée et initialisée automatiquement au premier lancement de l'application (voir electron/main.js -> initDatabase()).
